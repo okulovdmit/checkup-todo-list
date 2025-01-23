@@ -10,41 +10,41 @@
 
 <body>
   <div class="todo">
-    <form action="index.html" class="todo__logIn" method="post">
+    <form action="index.html" class="login" method="post">
       <h2>Log In</h2>
       
-      <label for="userName">Your name</label>
-      <input class="todo__logIn-name" type="text" name="user_name" id="userName" placeholder="Name" /> 
+      <label for="name">Your name</label>
+      <input class="login__name" type="text" name="username" id="name" placeholder="Name" /> 
       
-      <label for="userPassword">Your password</label>
-      <input class="todo__logIn-password" type="password" name="user_password" id="userPassword" placeholder="Password" />
+      <label for="password">Your password</label>
+      <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
      
-      <button class="todo__logIn-btn" type="submit">Log In</button>
+      <button class="login__btn" type="submit">Log In</button>
     </form>
     
-    <form action="index.html" class="todo__signUp" method="post">
+    <form action="index.html" class="signup" method="post">
       <h2>Sign Up</h2>
-      <label for="userName">Your name</label>
-      <input class="todo__signUp-name" type="text" name="user_name" id="userName" placeholder="Name" /> 
+      <label for="nameSignup">Your name</label>
+      <input class="signup__name" type="text" name="usernameSignup" id="nameSignup" placeholder="Name" /> 
       
-      <label for="userEmail">Your email</label>
-      <input class="todo__signUp-email" type="email" name="user_email" id="userEmail" placeholder="Email" /> 
+      <label for="emailSignup">Your email</label>
+      <input class="signup__email" type="email" name="emailSignup" id="emailSignup" placeholder="Email" /> 
       
-      <label for="userPassword">Your password</label>
-      <input class="todo__signUp-password" type="password" name="user_password" id="userPassword" placeholder="Password" />
+      <label for="passwordSignup">Your password</label>
+      <input class="signup__password" type="password" name="passwordSignup" id="passwordSignup" placeholder="Password" />
       
-      <button class="todo__signUp-btn" type="submit">Sign Up</button>
+      <button class="signup__btn" type="submit">Sign Up</button>
     </form>
 
-    <div class="todo__tasks">
+    <div class="tasks">
       <header class="header">
         <h1>Ваши задачи</h1>
         <div class="header__btns">
-          <div class="header__btnSort">
-            <button class="header__btnSort-btn">Сортировка</button>
+          <div class="header__item">
+            <button class="header__sort-btn">Сортировка</button>
           </div>
-          <div class="header__btnClear">
-            <button class="header__btnClear-btn">Удалить все</button>
+          <div class="header__item">
+            <button class="header__clear-btn">Удалить все</button>
           </div>
         </div>
       </header>
