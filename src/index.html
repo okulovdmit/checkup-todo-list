@@ -4,16 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 шаблон</title>
+  <title>Список задач</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header>Шапка сайта</header>  
-  <h1>Заголовок страницы</h1>
-  <main>
-    Основной контент сайта
-  </main>  
+  <div class="todo">
+    <form action="index.html" class="todo__form" method="post">
+      <h2>Log In</h2>
+      <!--<label for="name">Name</label>
+      <input
+        class="todo__form-name" 
+        type="text" 
+        name="name" 
+        id="user.name"
+        placeholder="Name" /> -->
+      <label for="email">Email</label>
+        <input
+        class="todo__form-email" 
+        type="email" 
+        name="email" 
+        id="user.email"
+        placeholder="Email" />
+      <label for="password">Password</label>
+        <input
+        class="todo__form-password" 
+        type="password" 
+        name="password" 
+        id="user.password"
+        placeholder="Password" />
+      <buttom class="todo__form-btn" type="submit">Log In</buttom>
+    </form>
+  </div> 
   <script src="app.js"></script>
 </body>
 
