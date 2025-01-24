@@ -63,13 +63,18 @@ body {
   background: #2e303e;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 p,
 a,
 button {
-  color: rgb(205, 205, 205);
+  color: white;
 }
 
-img {
+img, input {
   display: block;
   max-width: 100%;
   height: auto;
@@ -78,6 +83,61 @@ img {
 html,
 body {
   overflow-x: hidden;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 250px;
+}
+.login__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3rem;
+}
+.login__name {
+  border: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: white;
+  margin-bottom: 20px;
+}
+.login__name::placeholder {
+  opacity: 0.5;
+  font-size: 10px;
+}
+.login__password {
+  border: transparent;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.login__password::placeholder {
+  opacity: 0.5;
+  font-size: 10px;
+}
+.login__btn {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: auto 10px;
+  cursor: pointer;
+  margin-top: 2rem;
+  height: 40px;
+  font-weight: 500;
+}
+.login__btn:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 620px;
+  color: #fff;
+  font-size: 20px;
+  padding: auto 10px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

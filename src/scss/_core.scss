@@ -5,14 +5,19 @@ body {
   background: variables.$gray;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 
 p,
 a,
 button {
-  color: rgb(205, 205, 205);
+  color: white;
 }
 
-img {
+img, input {
   display: block;
   max-width: 100%;
   height: auto;

@@ -6,23 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Список задач</title>
   <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 
-<body>
-  <div class="todo">
-    <form action="index.html" class="login" method="post">
-      <h2>Log In</h2>
-      
-      <label for="name">Your name</label>
-      <input class="login__name" type="text" name="username" id="name" placeholder="Name" /> 
-      
-      <label for="password">Your password</label>
-      <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
-     
-      <button class="login__btn" type="submit">Log In</button>
-    </form>
+<body  class="container">
+  
     
-    <form action="index.html" class="signup" method="post">
+ <!-- Форма авторизации -->
+  <form action="index.html" class="login" method="post">
+    <h2 class="login__title">Log In</h2>
+      
+    <!-- <label for="name">Your name</label>  -->
+    
+    <input class="login__name" type="text" name="username" id="name" placeholder="Name" /> 
+     
+    <!-- <label for="password">Your password</label> -->
+    <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
+     
+    <button class="login__btn" type="submit">Log In</button>
+  </form>
+    
+  <!-- //Форма регистрации
+  <form action="index.html" class="signup" method="post">
       <h2>Sign Up</h2>
       <label for="nameSignup">Your name</label>
       <input class="signup__name" type="text" name="usernameSignup" id="nameSignup" placeholder="Name" /> 
@@ -34,9 +39,10 @@
       <input class="signup__password" type="password" name="passwordSignup" id="passwordSignup" placeholder="Password" />
       
       <button class="signup__btn" type="submit">Sign Up</button>
-    </form>
-
-    <div class="tasks">
+  </form>
+    
+  //Основной контент
+  <div class="tasks">
       <header class="header">
         <h1>Ваши задачи</h1>
         <div class="header__btns">
@@ -59,8 +65,8 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div> 
+  </div> -->
+  
   <script src="app.js"></script>
 </body>
 
