@@ -59,13 +59,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 /*Basic style*/
 body {
   font-family: "Roboto", sans-serif;
-  background: gray;
+  background: #2e303e;
 }
 
 p,
 a,
 button {
-  color: red;
+  color: rgb(205, 205, 205);
 }
 
 img {

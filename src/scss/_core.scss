@@ -1,15 +1,15 @@
 /*Basic style*/
-
+@use 'variables';
 body {
   font-family: 'Roboto', sans-serif;
-  background: gray;
+  background: variables.$gray;
 }
 
 
 p,
 a,
 button {
-  color: red;
+  color: rgb(205, 205, 205);
 }
 
 img {
