@@ -1,0 +1,24 @@
+/*Basic style*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: gray;
+}
+
+
+p,
+a,
+button {
+  color: red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
