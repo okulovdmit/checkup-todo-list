@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 /**
  * Сброс стилей
  **/
@@ -57,9 +56,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: "Brown";
+  src: url("../fonts/Brown/BrownLLCyr-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brown";
+  src: url("../fonts/Brown/BrownLLCyr-Light.otf") format("otf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brown";
+  src: url("../fonts/Brown/BrownLLCyr-Bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 /*Basic style*/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Brown", sans-serif;
   background: #2e303e;
 }
 
@@ -93,7 +113,7 @@ body {
 }
 .login__title {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
   color: white;
   margin-bottom: 3rem;
 }
@@ -128,7 +148,7 @@ body {
   cursor: pointer;
   margin-top: 2rem;
   height: 40px;
-  font-weight: 500;
+  font-weight: normal;
 }
 .login__btn:hover {
   border: 1px solid white;
