@@ -17,13 +17,19 @@
     <h2 class="login__title">Log In</h2>
       
     <!-- <label for="name">Your name</label>  -->
-    
     <input class="login__name" type="text" name="username" id="name" placeholder="Name" /> 
-     
-    <!-- <label for="password">Your password</label> -->
-    <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
-     
-    <button class="login__btn" type="submit">Log In</button>
+    
+    <div class="login__item">
+      <!-- <label for="password">Your password</label> -->
+      <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
+      <p class="login__text-error">Incorrect password or name</p> 
+    </div> 
+    
+    <div class="login__item">
+      <button class="login__btn" type="submit">Log In</button>
+      <p class="login__text">First time here? <a href="#">Sign up</a></p>
+    </div>        
+    
   </form>
     
   <!-- //Форма регистрации
