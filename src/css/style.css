@@ -118,21 +118,32 @@ body {
   margin-bottom: 3rem;
 }
 .login__name {
+  height: 30px;
   border: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   background: transparent;
   color: white;
   margin-bottom: 20px;
+  padding-left: 35px;
+  background-image: url("../../assets/icons/people.png");
+  background-repeat: no-repeat;
+  background-position: 0px center;
 }
 .login__name::placeholder {
   opacity: 0.5;
   font-size: 10px;
 }
 .login__password {
+  height: 30px;
   border: transparent;
   background-color: transparent;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  padding-left: 35px;
+  background-image: url("../../assets/icons/padlock.png");
+  background-repeat: no-repeat;
+  background-position: 0px center;
 }
 .login__password::placeholder {
   opacity: 0.5;
