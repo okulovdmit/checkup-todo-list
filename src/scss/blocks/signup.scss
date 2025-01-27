@@ -1,4 +1,5 @@
 @use '../mixins';
+@use '../variables';
 .signup {
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
   &__name {
     height: 30px;
     border: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid variables.$light-gray;
     background: transparent;
     color: white;
     margin-bottom: 20px;
@@ -39,17 +40,17 @@
       font-size: 10px;
     }
     &:hover {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
     &:focus {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
   }
 
   &__email {
     height: 30px;
     border: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid variables.$light-gray;
     background: transparent;
     color: white;
     margin-bottom: 20px;
@@ -65,10 +66,10 @@
       font-size: 10px;
     }
     &:hover {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
     &:focus {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
   }
 
@@ -78,7 +79,7 @@
     border: transparent;
     background-color: transparent;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid variables.$light-gray;
     //margin-bottom: 20px;
     padding-left: 35px;
     background-image: url('../../assets/icons/padlockWhite.png');
@@ -92,10 +93,10 @@
       font-size: 10px;
     }
     &:hover {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
     &:focus {
-      border-bottom: 1px solid rgb(250, 250, 112);
+      border-bottom: 1px solid variables.$yellow;
     }
   }
 
@@ -108,7 +109,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      @include mixins.btn(rgba(255, 255, 255, 0.5), rgb(0, 0, 0), 620px, #fff, 20px, auto, 10px);
+      @include mixins.btn(transparent, variables.$light-gray, 20px, #000000, 20px, auto, 10px);
     }
   }
 
@@ -120,7 +121,7 @@
     &-error {
     margin-top: 15px;
     font-size: 10px;
-    color: rgb(252, 115, 115);
+    color: variables.$red;
     }
   }
 }

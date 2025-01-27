@@ -11,7 +11,7 @@
 <body  class="container">
 
   <!-- Форма авторизации -->
-  <form action="index.html" class="login" method="post" style="visibility: none">
+  <form action="index.html" class="login" method="post">
     <h2 class="login__title">Log In</h2>
     <!-- <label for="name">Your name</label>  -->
     <input class="login__name" type="text" name="username" id="name" placeholder="Name" />
@@ -46,26 +46,30 @@
   </form>
 
   <!-- Основной контент -->
-  <div class="tasks" style="visibility: hidden;">
+  <div class="tasks">
       <header class="header">
-        <h1>Ваши задачи</h1>
-        <div class="header__btns">
+          <h1 class="header__title">Ваши задачи</h1>
           <div class="header__item">
-            <button class="header__sort-btn">Сортировка</button>
+            <button class="header__sort-btn btns">
+              <img src="./assets/icons/sortWhite.png" alt="sort" /><span>Сортировка</span>
+            </button>
           </div>
           <div class="header__item">
-            <button class="header__clear-btn">Удалить все</button>
+            <button class="header__clear-btn btns">
+              <img src="./assets/icons/trashWhite.png" alt="clear" /><span>Удалить все</span>
+            </button>
           </div>
-        </div>
       </header>
+
       <div class="main">
-        <div class="main__input">
-          <input class="main__input-input" type="text" placeholder="Введите вашу задачу" />
-          <button> Создать задачу</button>
+        <div class="main__item">
+          <input class="main__input" type="text" placeholder="Введите вашу задачу" />
+          <button class="main__create">Создать задачу</button>
         </div>
         <div class="main__tasks">
+          <p class="main__tasks-title">Текущие задачи:</p>
           <ul class="main__tasks-list">
-            <li>Свободное время</li>
+            <li>Создать список задач</li>
           </ul>
         </div>
       </div>
