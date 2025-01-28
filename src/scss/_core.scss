@@ -1,16 +1,17 @@
 /*Basic style*/
 @use 'variables';
+@use 'mixins';
 body {
   font-family: 'Brown', sans-serif;
   background: variables.$gray;
 }
 
 .container {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  @include mixins.min-max(320px, 100%);
 }
-
+.wrap {
+  @include mixins.min-max (320px, 1180px);
+}
 
 p,
 a,

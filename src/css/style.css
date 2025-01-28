@@ -84,9 +84,17 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1180px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 p,
@@ -339,8 +347,9 @@ body {
 .tasks {
   width: 500px;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .btns {
@@ -348,37 +357,31 @@ body {
   align-items: center;
   border: 1px solid transparent;
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 12px;
   color: white;
-  font-size: 10px;
+  font-size: 8px;
   padding: auto 0;
   cursor: pointer;
-  height: 40px;
+  height: 24px;
   width: auto;
   font-weight: 300;
   transition: all 0.3s ease-in-out;
 }
 .btns:hover {
-  border: 1px solid transparent;
-  background-color: transpaent;
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 10px;
-  padding: auto 0px;
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   margin: 50px auto;
 }
 .header__title {
+  flex-grow: 1;
   font-size: 30px;
   font-weight: bold;
   color: white;
-  margin-right: 130px;
 }
 .header__item {
   display: flex;
@@ -386,9 +389,11 @@ body {
   align-items: center;
   opacity: 50%;
 }
-.header img {
-  display: inline;
+.header__img-sort {
   height: 15px;
+}
+.header__img-clear {
+  height: 12px;
 }
 
 .main {
@@ -459,6 +464,42 @@ body {
 .main__tasks-list {
   padding: 10px 0 50px 50px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 720px) {
+  .tasks {
+    width: 400px;
+    padding: 50px 40px;
+  }
+  .tasks .main__create {
+    height: 24px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 512px) {
+  .tasks {
+    width: 250px;
+    padding: 50px 40px;
+  }
+  .tasks .header__img-sort {
+    height: 8px;
+  }
+  .tasks .header__img-clear {
+    height: 6px;
+  }
+  .tasks .main__create {
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  .btns {
+    height: 12px;
+    border-radius: 6px;
+  }
+  .btns--adaptive {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

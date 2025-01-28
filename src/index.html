@@ -11,25 +11,28 @@
 <body  class="container">
 
   <!-- Форма авторизации -->
-  <form action="index.html" class="login" method="post">
-    <h2 class="login__title">Log In</h2>
-    <!-- <label for="name">Your name</label>  -->
-    <input class="login__name" type="text" name="username" id="name" placeholder="Name" />
+  <div class="wrap">
+    <form action="index.html" class="login" method="post">
+      <h2 class="login__title">Log In</h2>
+      <!-- <label for="name">Your name</label>  -->
+      <input class="login__name" type="text" name="username" id="name" placeholder="Name" />
 
-    <div class="login__item">
-      <!-- <label for="password">Your password</label> -->
-      <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
-      <p class="login__text-error">Incorrect password or name</p>
-    </div>
+      <div class="login__item">
+        <!-- <label for="password">Your password</label> -->
+        <input class="login__password" type="password" name="password" id="password" placeholder="Password" />
+        <p class="login__text-error">Incorrect password or name</p>
+      </div>
 
-    <div class="login__item">
-      <button class="login__btn" type="submit">Log In</button>
-      <p class="login__text">First time here? <a href="#">Sign up</a></p>
-    </div>
-  </form>
+      <div class="login__item">
+        <button class="login__btn" type="submit">Log In</button>
+        <p class="login__text">First time here? <a href="#">Sign up</a></p>
+      </div>
+    </form>
+  </div>
+
   <!-- Форма регистрации -->
-
-  <form action="index.html" class="signup" method="post">
+  <div class="wrap">
+    <form action="index.html" class="signup" method="post">
       <h2 class="signup__title">Sign Up</h2>
       <!-- <label for="nameSignup">Your name</label> -->
       <input class="signup__name" type="text" name="usernameSignup" id="nameSignup" placeholder="Name" />
@@ -44,19 +47,22 @@
 
       <button class="signup__btn" type="submit">Sign Up</button>
   </form>
+  </div>
 
-  <!-- Основной контент -->
-  <div class="tasks">
+
+  <!-- Форма ввода задач -->
+  <div class="wrap">
+    <div class="tasks">
       <header class="header">
           <h1 class="header__title">Ваши задачи</h1>
           <div class="header__item">
             <button class="header__sort-btn btns">
-              <img src="./assets/icons/sortWhite.png" alt="sort" /><span>Сортировка</span>
+              <img src="./assets/icons/sortWhite.png" alt="sort" class="header__img-sort"/><span class="btns--adaptive">Сортировка</span>
             </button>
           </div>
           <div class="header__item">
             <button class="header__clear-btn btns">
-              <img src="./assets/icons/trashWhite.png" alt="clear" /><span>Удалить все</span>
+              <img src="./assets/icons/trashWhite.png" alt="clear" class="header__img-clear" /><span class="btns--adaptive">Удалить все</span>
             </button>
           </div>
       </header>
@@ -74,6 +80,8 @@
         </div>
       </div>
   </div>
+  </div>
+
 
   <script src="app.js"></script>
 </body>
